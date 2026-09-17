@@ -1,0 +1,138 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0f7;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4f709c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Conteúdo principal */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Formulário */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f709c;
+    box-shadow: 0 0 5px rgba(79, 112, 156, 0.4);
+}
+
+/* Botão */
+input[type="submit"] {
+    background-color: #4f709c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #385a85;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+thead {
+    background-color: #4f709c;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f6fa;
+}
+
+tbody tr:hover {
+    background-color: #e1ebf5;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4f709c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
